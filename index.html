@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="./images/icons/logos/arch.png">
+	<meta name="Description" content="Interactive map of Hannibal-LaGrange University">
+    <meta name="Keywords" content="Interactive Map, Google Map, Campus Map, HLGU, Hannibal-LaGrange University, Hannibal, Missouri">
+	
+    <title>Map - Hannibal-LaGrange University</title>
+
+    <link href="styles/gmap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="scripts/360content.js"></script>
+    <script src="scripts/index.js"></script>
+
+    <!--API Key from HLGU Google Cloud Platform Account-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Fz8GAPzL9cza8SlnVUCiBLmeSwK6fEI&callback=hlguMap.initialize" async defer></script>
+
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-998044-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+
+	<!-- Twitter card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HLGuniversity" />
+		<meta name="twitter:title" content="Map - Hannibal-LaGrange University" />
+		<meta name="twitter:domain" content="hlg.edu" />
+		<meta name="twitter:description" content="Interactive map of Hannibal-LaGrange University" />
+		<meta name="twitter:url" content="https://www.hlg.edu/about-hlgu/map/" />   <!--change this according to live URL-->
+	<!-- Open Graph -->
+		<meta property="og:title" content="Map - Hannibal-LaGrange University" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.hlg.edu/about-hlgu/map/" />    <!--change this according to live URL-->
+		<meta property="og:description" content="Interactive map of Hannibal-LaGrange University" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Hannibal-LaGrange University" />
+		<meta property="og:image:url" content="http://www.hlg.edu/about-hlgu/map/images/facebook-graphic.jpg" />            <!--change this according to live URL-->
+		<meta property="og:image:secure_url" content="http://www.hlg.edu/about-hlgu/map/images/facebook-graphic.png" />     <!--change this according to live URL-->
+</head>
+
+<body>
+    <section id="map">
+        <h1>Map</h1>
+
+        <aside>
+            <div id="buttons">
+                <ul class="controls" id="controls">
+                    <li id="menu" class="map-button">Toggle Menu <span class="logo-element"></span></li>
+                    <li id="home" class="map-button">Home</li>
+                </ul>
+            </div>
+            
+            <div class="mask">
+                <div class="nav-content">
+                    <h2>Hannibal-LaGrange University</h2>
+                    <img src="./images/icons/logos/HLGU.png" alt="HLGU Logo" />
+                    <div id="search-results" class="hidden">
+                        <div id="search-box">
+                            <button id="open-search"></button>
+                            <input type="text" id="search-field" disabled="disabled" />
+                        </div>
+                        <button id="close-search"></button>
+                        <div class="loading"></div>
+						<div class="results"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <button class="map-button" id="location-button" style="display: none;"></button>
+        <div id="gmap"></div>
+
+        <div id="container-small">
+            <div class="map-button close"><span class="logo-element">X</span></div>
+        </div>
+
+        <div id="container-full">
+            <div class="map-button close"><span class="logo-element">X</span></div>
+            <a class="map-button" id="btn-full-screen" data-fullscreen-360="false"></a>
+        </div>
+
+    </section>
+</body>
+</html>
