@@ -88,11 +88,11 @@ var hlguMap = (function ($) {
         NAME : {
             id : "ID_NAME",
             position : {
-                lat : x,    (larger is N)
-                lng : y     (larger is W) (unless you count a -)
+                lat : x,    // Increasing the latitude value moves northward; increasing
+                lng : y     // the longitude value (closer to 0) moves eastward. 
             },
             categories : [
-                hlguMapData.categories.PointsofInterest
+                hlguMapData.categories.PointsOfInterest
             ],
             content : {
                 name : "name",
@@ -240,6 +240,7 @@ var hlguMap = (function ($) {
                 content : "The Partee Center houses the University cafeteria as well as the Page Dining Room. The building also holds the CIS department and has several classrooms and computer labs.",
                 images : [
                     { src : "./images/locations/food_and_dining/partee_center_dining_hall/partee_exterior_1.jpg", caption : "Partee Center", showCaption : true },
+                    { src : "./images/locations/food_and_dining/partee_center_dining_hall/partee_caf.jpg", caption : "Dining Hall", showCaption : true },
                     { src : "./images/locations/food_and_dining/partee_center_dining_hall/partee_cis_hall.jpg", caption : "Computer Information Systems (CIS) Hallway", showCaption : true },
                     { src : "./images/locations/food_and_dining/partee_center_dining_hall/partee_lab.jpg", caption : "Computer Information Systems (CIS) Lab", showCaption : true },
                     { src : "./images/locations/food_and_dining/partee_center_dining_hall/partee_classroom.jpg", caption : "Classroom", showCaption : true },
