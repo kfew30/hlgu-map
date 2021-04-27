@@ -599,7 +599,7 @@ li.category ol li:hover {
     background-size: contain;
     background-position: top left;
     
-    background-image: url(../images/icons/logos/seal-35.png);       /* The Points of Interest menu sprite */
+    background-image: url(../images/icons/logos/seal-35.svg);       /* The Points of Interest menu sprite */
 }
 
 #container-small .content {
