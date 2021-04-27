@@ -597,9 +597,10 @@ li.category ol li:hover {
     
     background-size: auto 100%;
     background-size: contain;
-    background-position: top left;
+    background-position: 50% 50%;
     
-    background-image: url(../images/icons/logos/seal-35.svg);       /* The Points of Interest menu sprite */
+    /* The small side menu logo that appears when a description is viewed */
+    background-image: url(../images/icons/logos/seal-35.svg);
 }
 
 #container-small .content {
