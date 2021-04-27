@@ -933,7 +933,7 @@ li.category ol li:hover {
     background-size: auto 100%;
     background-position: left;
     
-    background-image: url(../images/icons/sprites/Location_Icon_Sprite.svg);
+    background-image: url(../images/icons/search/Location_Icon_Sprite.svg);
 }
 
 #location-button:hover {
@@ -1013,7 +1013,7 @@ div.mask {
     margin-right: 6px; margin-right: 10px;
     height: 16px;
     width: 16px;
-    background-image: url(../images/icons/sprites/search_sprite.svg);       /* The Search icon */
+    background-image: url(../images/icons/search/search_sprite.svg);       /* The Search icon */
 }
 
 #search-box #search-field {
@@ -1045,7 +1045,7 @@ div.mask {
     
     height: 16px; height: 18px;
     width: 16px; width: 18px;
-    background-image: url(../images/icons/sprites/close_sprite.svg);       /* The Close icon */
+    background-image: url(../images/icons/search/close_sprite.svg);       /* The Close icon */
 }
 
 #search-results {
