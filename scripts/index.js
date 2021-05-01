@@ -363,6 +363,7 @@ var hlguMap = (function ($) {
                 content : "Built in 2015 as the newest building on campus, the Carroll Science Center houses all nursing, science, and mathematics courses and labs. The building has state-of-the art facilities for the training of RNs and LPNs.",
                 images : [
                     { src : "./images/locations/academics_and_offices/carroll_science_center/csc_exterior_1.jpg", caption : "Carroll Science Center", showCaption : true },
+                    { src : "./images/locations/academics_and_offices/carroll_science_center/csc_sunset.jpg", caption : "Carroll Science Center", showCaption : true },
                 ]
             }
         },
